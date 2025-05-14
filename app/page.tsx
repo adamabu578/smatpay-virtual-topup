@@ -71,7 +71,7 @@ export default function Home() {
             </motion.h2>
 
                 <motion.h2
-                  className="text-2xl text-purple-800 font-bold mb-4 font-extralight"
+                  className="text-2xl text-purple-800 font-extralight mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}

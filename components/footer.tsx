@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { CreditCard, Facebook, Instagram, Twitter } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -8,7 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <CreditCard className="h-5 w-5" />
+              {/* <CreditCard className="h-5 w-5" /> */}
+               <Image src="/assets/smatpay.png" alt="Logo" width={40} height={40} className="rounded-full" />
               <span className="font-bold">SMATPAY</span>
             </div>
             <p className="text-sm text-muted-foreground">

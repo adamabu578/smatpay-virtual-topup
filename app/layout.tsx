@@ -10,9 +10,9 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Virtual Top-Up Services",
+  title: "smatpay",
   description: "Quick and secure payments for all your utility bills and subscriptions",
-    generator: 'v0.dev'
+    generator: 'smatpay'
 }
 
 export default function RootLayout({

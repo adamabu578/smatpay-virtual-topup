@@ -58,12 +58,68 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <Image src="/assets/character.png" alt="Logo" width={300} height={100} className="" />
+        {/* <h2 className="text-4xl font-bold mb-4 font-serif">WELCOME TO</h2>
+        <h2 className="text-2xl text-purple-800 font-bold mb-4">SMATPAY</h2> */}
+            <div>
+            <motion.h2
+              className="text-4xl font-bold mb-4 font-serif"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              WELCOME TO
+            </motion.h2>
+
+                <motion.h2
+                  className="text-2xl text-purple-800 font-bold mb-4 font-extralight"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+                >
+                  SMATPAY
+                </motion.h2>
+           </div>
+
+
+        {/* <Image src="/assets/character.png" alt="Logo" width={300} height={100} className="" />
         <h1 className="text-4xl font-bold tracking-tight mb-4"><span className="text-purple-700">SMATPAY</span> VTU Services</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Quick and secure payments for all your utility bills and subscriptions in one place.
-        </p>
-        
+        </p> */}
+    <div className="text-center py-10">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+      >
+        <Image
+          src="/assets/character.png"
+          alt="Logo"
+          width={300}
+          height={100}
+          className="mx-auto"
+        />
+      </motion.div>
+
+      <motion.h1
+        className="text-4xl font-bold tracking-tight mb-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <span className="text-purple-700">SMATPAY</span> VTU Services
+      </motion.h1>
+
+      <motion.p
+        className="text-muted-foreground max-w-2xl mx-auto"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+      >
+        Quick and secure payments for all your utility bills and subscriptions in one place.
+      </motion.p>
+    </div>
+
       </motion.div>
 
       <motion.div

@@ -88,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TopUpPro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SMATPAY. All rights reserved.</p>
         </div>
       </div>
     </footer>

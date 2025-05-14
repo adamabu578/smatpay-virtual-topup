@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, CreditCard, Moon, Sun } from "lucide-react"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -26,7 +27,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <CreditCard className="h-6 w-6" />
+          {/* <CreditCard className="h-6 w-6" /> */}
+          <Image src="/assets/smatpay.png" alt="Logo" width={40} height={40} className="rounded-full" />
           <span className="font-bold text-xl">SMATPAY VTU</span>
         </Link>
 

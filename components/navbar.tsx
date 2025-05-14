@@ -29,7 +29,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           {/* <CreditCard className="h-6 w-6" /> */}
           <Image src="/assets/smatpay.png" alt="Logo" width={40} height={40} className="rounded-full" />
-          <span className="font-bold text-xl">SMATPAY VTU</span>
+          {/* <span className="font-bold text-xl">SMATPAY VTU</span> */}
         </Link>
 
         <nav className="hidden md:flex gap-6">
@@ -81,7 +81,7 @@ export default function Navbar() {
                     {route.label}
                   </Link>
                 ))}
-                <Button className="mt-4">Sign In</Button>
+                <Button className="mt-4">Get started</Button>
               </div>
             </SheetContent>
           </Sheet>

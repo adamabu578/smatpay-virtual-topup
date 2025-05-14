@@ -71,13 +71,22 @@ export default function Home() {
             </motion.h2>
 
                 <motion.h2
-                  className="text-2xl text-purple-800 font-extralight mb-4"
+                  className="text-2xl text-white font-medium mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
                 >
                   SMATPAY
                 </motion.h2>
+
+                <motion.p
+                  className="text-2xl text-purple-800 font-medium mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+                >
+                  Scroll down to buy airtime, data bundles, and pay electricity bills—fast and easy!
+                </motion.p>
            </div>
 
 
@@ -153,7 +162,7 @@ export default function Home() {
         className="mt-16 text-center"
       >
         <h2 className="text-2xl font-bold mb-4">Recent Transactions</h2>
-        <Card>
+        <Card className="hover:border-purple-400">
           <CardContent className="p-6">
             <div className="flex justify-center items-center h-40">
               <p className="text-muted-foreground">No recent transactions</p>

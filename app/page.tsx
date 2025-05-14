@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Airplay, Bolt, Tv, Wifi } from "lucide-react"
-
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -58,6 +58,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
+        <Image src="/assets/character.png" alt="Logo" width={300} height={100} className="" />
         <h1 className="text-4xl font-bold tracking-tight mb-4"><span className="text-purple-700">SMATPAY</span> VTU Services</h1>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Quick and secure payments for all your utility bills and subscriptions in one place.
